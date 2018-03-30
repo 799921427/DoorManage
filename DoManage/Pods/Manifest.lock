@@ -1,0 +1,18 @@
+PODS:
+  - GTMRefresh (1.3.1)
+  - Kingfisher (4.6.3)
+  - LLCycleScrollView (1.4.6):
+    - Kingfisher
+
+DEPENDENCIES:
+  - GTMRefresh
+  - LLCycleScrollView
+
+SPEC CHECKSUMS:
+  GTMRefresh: 35ba359233dac3920ad562f0c549f88eefd060b7
+  Kingfisher: 98e6d5b5e807645743e8ed5ececd25d688d38452
+  LLCycleScrollView: 2f309d229937b755b3ecc41f39caa8b27bd86fa9
+
+PODFILE CHECKSUM: c6c3a9fc8743f2f1a13c8a9ed1e6eeba2820ad3f
+
+COCOAPODS: 1.4.0
