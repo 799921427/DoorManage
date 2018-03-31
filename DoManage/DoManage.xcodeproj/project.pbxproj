@@ -28,6 +28,8 @@
 		B906654C205D45C700D63456 /* HeadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9066543205D45C500D63456 /* HeadTableViewCell.xib */; };
 		B906654D205D45C700D63456 /* HeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9066544205D45C500D63456 /* HeadView.swift */; };
 		B906654E205D45C700D63456 /* MyTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9066545205D45C600D63456 /* MyTableViewCell2.swift */; };
+		B958FB23206E21C20039BC17 /* MyTableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B958FB21206E21C20039BC17 /* MyTableViewCell1.swift */; };
+		B958FB24206E21C20039BC17 /* MyTableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = B958FB22206E21C20039BC17 /* MyTableViewCell1.xib */; };
 		FBDC239B9694ABA3FA729B45 /* Pods_DoManage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 751DD9FF4E6E45D4CF32ECB9 /* Pods_DoManage.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,8 @@
 		B9066543205D45C500D63456 /* HeadTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadTableViewCell.xib; sourceTree = "<group>"; };
 		B9066544205D45C500D63456 /* HeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadView.swift; sourceTree = "<group>"; };
 		B9066545205D45C600D63456 /* MyTableViewCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell2.swift; sourceTree = "<group>"; };
+		B958FB21206E21C20039BC17 /* MyTableViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell1.swift; sourceTree = "<group>"; };
+		B958FB22206E21C20039BC17 /* MyTableViewCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell1.xib; sourceTree = "<group>"; };
 		BEAA61972470683042A557F9 /* Pods-DoManage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoManage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoManage/Pods-DoManage.debug.xcconfig"; sourceTree = "<group>"; };
 		EE773BD65DD3BE0D28C47359 /* Pods-DoManage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoManage.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoManage/Pods-DoManage.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +159,8 @@
 				B9066543205D45C500D63456 /* HeadTableViewCell.xib */,
 				B9066544205D45C500D63456 /* HeadView.swift */,
 				B9066541205D45C300D63456 /* HeadView.xib */,
+				B958FB21206E21C20039BC17 /* MyTableViewCell1.swift */,
+				B958FB22206E21C20039BC17 /* MyTableViewCell1.xib */,
 				B9066545205D45C600D63456 /* MyTableViewCell2.swift */,
 				B9066540205D45C300D63456 /* MyTableViewCell2.xib */,
 				B906653D205D45C100D63456 /* TitleView.swift */,
@@ -315,6 +321,7 @@
 				B9066506205D3E5700D63456 /* Assets.xcassets in Resources */,
 				B9066504205D3E5700D63456 /* Main.storyboard in Resources */,
 				B9066547205D45C700D63456 /* TitleView.xib in Resources */,
+				B958FB24206E21C20039BC17 /* MyTableViewCell1.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +407,7 @@
 				B9066539205D45A600D63456 /* MyTabBarViewController.swift in Sources */,
 				B9066538205D45A600D63456 /* FirstViewController.swift in Sources */,
 				B906653C205D45A600D63456 /* CALayer+UIColor.m in Sources */,
+				B958FB23206E21C20039BC17 /* MyTableViewCell1.swift in Sources */,
 				B9066536205D45A600D63456 /* EveryDayView.swift in Sources */,
 				B906654E205D45C700D63456 /* MyTableViewCell2.swift in Sources */,
 				B9066501205D3E5700D63456 /* ViewController.swift in Sources */,

@@ -1,19 +1,18 @@
 //
-//  MyTableViewCell2.swift
-//  DoorManage
+//  MyTableViewCell1.swift
+//  DoManage
 //
-//  Created by 张德茂 on 2018/3/14.
+//  Created by 张德茂 on 2018/3/30.
 //  Copyright © 2018年 张德茂. All rights reserved.
 //
 
 import UIKit
 
-class MyTableViewCell2: UITableViewCell {
-    var isConfirm : Bool = false
-    @IBOutlet weak var visitTime: UILabel!
-    @IBOutlet weak var visitID: UILabel!
+class MyTableViewCell1: UITableViewCell {
+
     @IBOutlet weak var imgView: UIImageView!
-    @IBOutlet weak var confirm: UIButton!
+    @IBOutlet weak var visitNum: UILabel!
+    @IBOutlet weak var visitTime: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

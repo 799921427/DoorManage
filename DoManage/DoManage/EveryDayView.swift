@@ -11,16 +11,24 @@ import UIKit
 class EveryDayView: UIViewController,UITableViewDelegate,UITableViewDataSource {
     @IBOutlet weak var myTableView: UITableView!
     
-
+    @IBOutlet weak var connectTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.createTitle("i家", titleImage: "", backImage:"nav", rightImgae: "search")
+        self.createTitle("i家", titleImage: "", backImage:"nav", rightImgae: "")
+        let nib1 = UINib(nibName:"MyTableViewCell1",bundle:nil);
+        self.connectTableView.register(nib1, forCellReuseIdentifier: "Cell1")
+        self.connectTableView.separatorStyle = .none
+        self.connectTableView.separatorColor = .clear
+        self.connectTableView.tag = 1;
+        self.connectTableView.delegate = self;
+        self.connectTableView.dataSource = self;
         
         let nib2 = UINib(nibName:"MyTableViewCell2",bundle:nil);
         self.myTableView.register(nib2, forCellReuseIdentifier: "Cell2")
         self.myTableView.separatorStyle = .none
         self.myTableView.separatorColor = .clear
-        
+        self.myTableView.tag = 0;
         self.myTableView.delegate = self
         self.myTableView.dataSource = self
         
@@ -39,13 +47,23 @@ class EveryDayView: UIViewController,UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       
         
-       
-            let cell2 : MyTableViewCell2 = tableView.dequeueReusableCell(withIdentifier: "Cell2") as! MyTableViewCell2
-            print("mmp2")
+        if tableView.tag == 1
+        {
+            let cell1: MyTableViewCell1
+            cell1 = tableView.dequeueReusableCell(withIdentifier: "Cell1") as! MyTableViewCell1
+            
+            print("mmp1")
+            return cell1
+        }
+        else
+        {
+            let cell2: MyTableViewCell2
+            cell2 = tableView.dequeueReusableCell(withIdentifier: "Cell2") as! MyTableViewCell2
+//            cell2.confirm.addTarget(self, action: #selector(confirmUser), for: <#T##UIControlEvents#>)
             return cell2
-        
+            print("mmp2")
+        }
         
     }
     

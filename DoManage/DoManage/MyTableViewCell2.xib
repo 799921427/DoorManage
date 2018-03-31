@@ -75,11 +75,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gav-U7-OzH">
-                                <rect key="frame" x="440" y="54.5" width="40" height="40"/>
+                                <rect key="frame" x="450" y="59.5" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Gav-U7-OzH" secondAttribute="height" multiplier="1:1" id="J8a-Wq-Qnv"/>
-                                    <constraint firstAttribute="height" constant="40" id="fR2-ZM-Jdd"/>
-                                    <constraint firstAttribute="width" constant="40" id="njq-8L-fSM"/>
+                                    <constraint firstAttribute="height" constant="30" id="fR2-ZM-Jdd"/>
+                                    <constraint firstAttribute="width" constant="30" id="njq-8L-fSM"/>
                                 </constraints>
                                 <state key="normal" image="confirm"/>
                             </button>
@@ -126,6 +126,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="FD8-Yy-15a"/>
             <connections>
+                <outlet property="confirm" destination="Gav-U7-OzH" id="PIR-D2-Q0N"/>
                 <outlet property="imgView" destination="3uZ-FS-msi" id="hrN-Z9-LOs"/>
                 <outlet property="visitID" destination="7Nb-Vn-Mwg" id="502-LI-NU6"/>
                 <outlet property="visitTime" destination="ccr-oV-Apm" id="sjE-ec-Hzl"/>
