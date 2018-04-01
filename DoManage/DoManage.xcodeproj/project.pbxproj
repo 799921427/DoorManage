@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C588D0B206F6AC300EB08A4 /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C588D0A206F6AC300EB08A4 /* ConnectViewController.swift */; };
+		5C588D0D206F7B1300EB08A4 /* PropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C588D0C206F7B1300EB08A4 /* PropertyViewController.swift */; };
 		B90664FF205D3E5700D63456 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90664FE205D3E5700D63456 /* AppDelegate.swift */; };
 		B9066501205D3E5700D63456 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9066500205D3E5700D63456 /* ViewController.swift */; };
 		B9066504205D3E5700D63456 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9066502205D3E5700D63456 /* Main.storyboard */; };
@@ -51,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C588D0A206F6AC300EB08A4 /* ConnectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
+		5C588D0C206F7B1300EB08A4 /* PropertyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyViewController.swift; sourceTree = "<group>"; };
 		751DD9FF4E6E45D4CF32ECB9 /* Pods_DoManage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoManage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B90664FB205D3E5700D63456 /* DoManage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoManage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B90664FE205D3E5700D63456 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 				B906652E205D459D00D63456 /* CALayer+UIColor.h */,
 				B9066535205D45A500D63456 /* CALayer+UIColor.m */,
 				B906652D205D459D00D63456 /* EveryDayView.swift */,
+				5C588D0A206F6AC300EB08A4 /* ConnectViewController.swift */,
 				B9066530205D459F00D63456 /* FirstViewController.swift */,
 				B906652F205D459E00D63456 /* HeadTableViewCell.swift */,
 				B9066531205D45A000D63456 /* MyTabBarViewController.swift */,
@@ -177,6 +182,7 @@
 				B90664FE205D3E5700D63456 /* AppDelegate.swift */,
 				B9066500205D3E5700D63456 /* ViewController.swift */,
 				B9066502205D3E5700D63456 /* Main.storyboard */,
+				5C588D0C206F7B1300EB08A4 /* PropertyViewController.swift */,
 				B9066505205D3E5700D63456 /* Assets.xcassets */,
 				B9066507205D3E5700D63456 /* LaunchScreen.storyboard */,
 				B906650A205D3E5700D63456 /* Info.plist */,
@@ -405,12 +411,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9066539205D45A600D63456 /* MyTabBarViewController.swift in Sources */,
+				5C588D0D206F7B1300EB08A4 /* PropertyViewController.swift in Sources */,
 				B9066538205D45A600D63456 /* FirstViewController.swift in Sources */,
 				B906653C205D45A600D63456 /* CALayer+UIColor.m in Sources */,
 				B958FB23206E21C20039BC17 /* MyTableViewCell1.swift in Sources */,
 				B9066536205D45A600D63456 /* EveryDayView.swift in Sources */,
 				B906654E205D45C700D63456 /* MyTableViewCell2.swift in Sources */,
 				B9066501205D3E5700D63456 /* ViewController.swift in Sources */,
+				5C588D0B206F6AC300EB08A4 /* ConnectViewController.swift in Sources */,
 				B90664FF205D3E5700D63456 /* AppDelegate.swift in Sources */,
 				B9066537205D45A600D63456 /* HeadTableViewCell.swift in Sources */,
 				B906653A205D45A600D63456 /* PersonalViewController.swift in Sources */,
@@ -587,6 +595,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7E9P6XZ2F6;
 				INFOPLIST_FILE = DoManage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fzu.com.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -606,6 +615,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7E9P6XZ2F6;
 				INFOPLIST_FILE = DoManage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fzu.com.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";

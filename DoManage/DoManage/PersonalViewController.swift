@@ -18,9 +18,10 @@ class PersonalViewController: UITableViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
          self.createTitle("i家帮", titleImage: "", leftImage: "nav", rightImgae: "letter")
-        dataSource1 = ["功能一","功能二"]
-        dataSource2 = ["功能三","功能四","功能五","功能六"]
-    
+        dataSource1 = ["失物招领","物业报修"]
+        dataSource2 = ["水费查询","电费查询","问题反馈","功能六"]
+        self.tabBarItem.selectedImage = UIImage(named: "tab4")?.withRenderingMode(.alwaysOriginal)
+        self.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor : UIColor(red: 243/255.0, green: 154/255.0, blue: 6/255.0, alpha: 1.0)], for: .highlighted)
         self.tableView.isScrollEnabled = false
         let nib = UINib(nibName:"HeadTableViewCell",bundle:nil);
         self.tableView.register(nib, forCellReuseIdentifier: "HeadView")

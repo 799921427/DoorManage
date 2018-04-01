@@ -1,54 +1,47 @@
 //
-//  EveryDayView.swift
-//  DoorManage
+//  ConnectViewController.swift
+//  DoManage
 //
-//  Created by 张德茂 on 2018/3/14.
+//  Created by 郑凯 on 2018/3/31.
 //  Copyright © 2018年 张德茂. All rights reserved.
 //
 
 import UIKit
 
-class EveryDayView: UIViewController,UITableViewDelegate,UITableViewDataSource {
-    @IBOutlet weak var myTableView: UITableView!
-    
- //   @IBOutlet weak var connectTableView: UITableView!
-    
+class ConnectViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
+
+    @IBOutlet weak var connectTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.createTitle("i家", titleImage: "", backImage:"nav", rightImgae: "")
-        self.tabBarItem.selectedImage = UIImage(named: "door")?.withRenderingMode(.alwaysOriginal)
+        self.createTitle("通讯录", titleImage: "", backImage:"nav", rightImgae: "")
+        self.tabBarItem.selectedImage = UIImage(named: "tab2")?.withRenderingMode(.alwaysOriginal)
         self.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor : UIColor(red: 243/255.0, green: 154/255.0, blue: 6/255.0, alpha: 1.0)], for: .highlighted)
-        
-        let nib2 = UINib(nibName:"MyTableViewCell2",bundle:nil);
-        self.myTableView.register(nib2, forCellReuseIdentifier: "Cell2")
-        self.myTableView.separatorStyle = .none
-        self.myTableView.separatorColor = .clear
-        self.myTableView.tag = 0;
-        self.myTableView.delegate = self
-        self.myTableView.dataSource = self
-        
-//        self.myTableView.estimatedRowHeight = 150
-//        self.myTableView.rowHeight = UITableViewAutomaticDimension
+        let nib1 = UINib(nibName:"MyTableViewCell1",bundle:nil);
+        self.connectTableView.register(nib1, forCellReuseIdentifier: "Cell1")
+        self.connectTableView.separatorStyle = .none
+        self.connectTableView.separatorColor = .clear
+        self.connectTableView.delegate = self;
+        self.connectTableView.dataSource = self;
         // Do any additional setup after loading the view.
     }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-       
-            let cell2: MyTableViewCell2
-            cell2 = tableView.dequeueReusableCell(withIdentifier: "Cell2") as! MyTableViewCell2
-//            cell2.confirm.addTarget(self, action: #selector(confirmUser), for: <#T##UIControlEvents#>)
-            return cell2
-            print("mmp2")
+      
+    
+            let cell1: MyTableViewCell1
+            cell1 = tableView.dequeueReusableCell(withIdentifier: "Cell1") as! MyTableViewCell1
+            
+            print("mmp1")
+            return cell1
         
         
     }
@@ -60,6 +53,7 @@ class EveryDayView: UIViewController,UITableViewDelegate,UITableViewDataSource {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
+
     /*
     // MARK: - Navigation
 
