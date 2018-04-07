@@ -44,14 +44,14 @@ class ViewController: UIViewController {
         let pswStr = pswField.text as! String
         dic = ["name":nameStr,"password":pswStr]
         ZDMInterfaceConnection().connentNet(method: "/login", params: dic, block: {(fail,dataMsg,dict) in
-                print("succes:\(fail)")
-                if(fail==0)
-                {
-                    let story = UIStoryboard(name: "Main", bundle: nil)
-                    let tabView = story.instantiateViewController(withIdentifier: "MyTabBarViewController")
-                    self.present(tabView, animated: true, completion: nil)
-                }
-            })
+            print("succes:\(fail)")
+            if(fail==0)
+            {
+                let story = UIStoryboard(name: "Main", bundle: nil)
+                let tabView = story.instantiateViewController(withIdentifier: "MyTabBarViewController")
+                self.present(tabView, animated: true, completion: nil)
+            }
+        })
         
     }
     

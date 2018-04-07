@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GTMRefresh
 
 class EveryDayView: UIViewController,UITableViewDelegate,UITableViewDataSource {
     @IBOutlet weak var myTableView: UITableView!
@@ -26,10 +27,30 @@ class EveryDayView: UIViewController,UITableViewDelegate,UITableViewDataSource {
         self.myTableView.tag = 0;
         self.myTableView.delegate = self
         self.myTableView.dataSource = self
-        
+        self.myTableView.gtm_addRefreshHeaderView {
+            [weak self] in
+           
+            self?.refresh()
+        }
+        self.myTableView.gtm_addLoadMoreFooterView {
+            [weak self] in
+           
+            self?.loadMore()
+        }
+        //self.myTableView.triggerRefreshing()
 //        self.myTableView.estimatedRowHeight = 150
 //        self.myTableView.rowHeight = UITableViewAutomaticDimension
         // Do any additional setup after loading the view.
+    }
+    
+    func refresh()
+    {
+        print("refresh")
+    }
+    
+    func loadMore()
+    {
+        print("loadMore")
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

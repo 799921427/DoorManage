@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5C588D0B206F6AC300EB08A4 /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C588D0A206F6AC300EB08A4 /* ConnectViewController.swift */; };
 		5C588D0D206F7B1300EB08A4 /* PropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C588D0C206F7B1300EB08A4 /* PropertyViewController.swift */; };
+		5C588D172078F1AA00EB08A4 /* ZDMInterfaceConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C588D162078F1AA00EB08A4 /* ZDMInterfaceConnection.swift */; };
 		B90664FF205D3E5700D63456 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90664FE205D3E5700D63456 /* AppDelegate.swift */; };
 		B9066501205D3E5700D63456 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9066500205D3E5700D63456 /* ViewController.swift */; };
 		B9066504205D3E5700D63456 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9066502205D3E5700D63456 /* Main.storyboard */; };
@@ -32,7 +33,6 @@
 		B906654E205D45C700D63456 /* MyTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9066545205D45C600D63456 /* MyTableViewCell2.swift */; };
 		B958FB23206E21C20039BC17 /* MyTableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B958FB21206E21C20039BC17 /* MyTableViewCell1.swift */; };
 		B958FB24206E21C20039BC17 /* MyTableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = B958FB22206E21C20039BC17 /* MyTableViewCell1.xib */; };
-		B973E24220776600007758E7 /* ZDMInterfaceConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B973E241207765FF007758E7 /* ZDMInterfaceConnection.swift */; };
 		FBDC239B9694ABA3FA729B45 /* Pods_DoManage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 751DD9FF4E6E45D4CF32ECB9 /* Pods_DoManage.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +56,7 @@
 /* Begin PBXFileReference section */
 		5C588D0A206F6AC300EB08A4 /* ConnectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
 		5C588D0C206F7B1300EB08A4 /* PropertyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyViewController.swift; sourceTree = "<group>"; };
+		5C588D162078F1AA00EB08A4 /* ZDMInterfaceConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZDMInterfaceConnection.swift; path = ../../DoorManage/DoManage/DoManage/ZDMInterfaceConnection.swift; sourceTree = "<group>"; };
 		751DD9FF4E6E45D4CF32ECB9 /* Pods_DoManage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoManage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B90664FB205D3E5700D63456 /* DoManage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoManage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B90664FE205D3E5700D63456 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,7 +90,6 @@
 		B9066545205D45C600D63456 /* MyTableViewCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell2.swift; sourceTree = "<group>"; };
 		B958FB21206E21C20039BC17 /* MyTableViewCell1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell1.swift; sourceTree = "<group>"; };
 		B958FB22206E21C20039BC17 /* MyTableViewCell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell1.xib; sourceTree = "<group>"; };
-		B973E241207765FF007758E7 /* ZDMInterfaceConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDMInterfaceConnection.swift; sourceTree = "<group>"; };
 		BEAA61972470683042A557F9 /* Pods-DoManage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoManage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoManage/Pods-DoManage.debug.xcconfig"; sourceTree = "<group>"; };
 		EE773BD65DD3BE0D28C47359 /* Pods-DoManage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoManage.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoManage/Pods-DoManage.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,11 +174,8 @@
 				B906652E205D459D00D63456 /* CALayer+UIColor.h */,
 				B9066535205D45A500D63456 /* CALayer+UIColor.m */,
 				B906652D205D459D00D63456 /* EveryDayView.swift */,
-<<<<<<< HEAD
 				5C588D0A206F6AC300EB08A4 /* ConnectViewController.swift */,
-=======
-				B973E241207765FF007758E7 /* ZDMInterfaceConnection.swift */,
->>>>>>> loginConnect
+				5C588D162078F1AA00EB08A4 /* ZDMInterfaceConnection.swift */,
 				B9066530205D459F00D63456 /* FirstViewController.swift */,
 				B906652F205D459E00D63456 /* HeadTableViewCell.swift */,
 				B9066531205D45A000D63456 /* MyTabBarViewController.swift */,
@@ -419,6 +416,7 @@
 				B9066539205D45A600D63456 /* MyTabBarViewController.swift in Sources */,
 				5C588D0D206F7B1300EB08A4 /* PropertyViewController.swift in Sources */,
 				B9066538205D45A600D63456 /* FirstViewController.swift in Sources */,
+				5C588D172078F1AA00EB08A4 /* ZDMInterfaceConnection.swift in Sources */,
 				B906653C205D45A600D63456 /* CALayer+UIColor.m in Sources */,
 				B958FB23206E21C20039BC17 /* MyTableViewCell1.swift in Sources */,
 				B9066536205D45A600D63456 /* EveryDayView.swift in Sources */,
@@ -429,7 +427,6 @@
 				B9066537205D45A600D63456 /* HeadTableViewCell.swift in Sources */,
 				B906653A205D45A600D63456 /* PersonalViewController.swift in Sources */,
 				B906653B205D45A600D63456 /* UIViewController+ZDMConfigure.m in Sources */,
-				B973E24220776600007758E7 /* ZDMInterfaceConnection.swift in Sources */,
 				B906654D205D45C700D63456 /* HeadView.swift in Sources */,
 				B9066546205D45C700D63456 /* TitleView.swift in Sources */,
 			);
