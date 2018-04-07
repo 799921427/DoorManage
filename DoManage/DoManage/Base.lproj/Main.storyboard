@@ -215,7 +215,7 @@
         <!--My Tab Bar View Controller-->
         <scene sceneID="WqJ-nm-5lt">
             <objects>
-                <tabBarController id="KrK-Ji-cuQ" customClass="MyTabBarViewController" customModule="DoManage" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MyTabBarViewController" id="KrK-Ji-cuQ" customClass="MyTabBarViewController" customModule="DoManage" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="vr3-UF-ZOA"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hvZ-ZQ-Vgl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -341,9 +341,9 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="CQ2-Uu-wS9">
-                                                <rect key="frame" x="70" y="2" width="220" height="51"/>
+                                                <rect key="frame" x="75" y="2" width="215" height="51"/>
                                                 <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3h-Vg-fLH">
@@ -357,10 +357,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="tnc-ih-nIp">
-                                                <rect key="frame" x="70" y="57" width="220" height="51"/>
+                                                <rect key="frame" x="75" y="57" width="215" height="51"/>
                                                 <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hk0-5b-iQR">
                                                 <rect key="frame" x="0.0" y="53" width="300" height="1"/>
@@ -385,13 +385,13 @@
                                             <constraint firstItem="CQ2-Uu-wS9" firstAttribute="height" secondItem="Osx-fv-y68" secondAttribute="height" id="4iO-3f-XVe"/>
                                             <constraint firstAttribute="bottom" secondItem="c3h-Vg-fLH" secondAttribute="bottom" constant="2" id="5Xh-hk-QS1"/>
                                             <constraint firstItem="Osx-fv-y68" firstAttribute="leading" secondItem="PH0-Of-ONF" secondAttribute="leading" constant="20" id="6Ah-HD-aV6"/>
-                                            <constraint firstItem="tnc-ih-nIp" firstAttribute="leading" secondItem="c3h-Vg-fLH" secondAttribute="trailing" constant="5" id="7Y7-SZ-7UN"/>
+                                            <constraint firstItem="tnc-ih-nIp" firstAttribute="leading" secondItem="c3h-Vg-fLH" secondAttribute="trailing" constant="10" id="7Y7-SZ-7UN"/>
                                             <constraint firstItem="CQ2-Uu-wS9" firstAttribute="top" secondItem="Osx-fv-y68" secondAttribute="top" id="7eS-gM-CtL"/>
                                             <constraint firstAttribute="trailing" secondItem="tnc-ih-nIp" secondAttribute="trailing" constant="10" id="9cH-ui-s7C"/>
                                             <constraint firstItem="c3h-Vg-fLH" firstAttribute="leading" secondItem="PH0-Of-ONF" secondAttribute="leading" constant="20" id="H2z-ne-tP8"/>
                                             <constraint firstItem="Hk0-5b-iQR" firstAttribute="top" secondItem="Osx-fv-y68" secondAttribute="bottom" id="QSr-PE-iWp"/>
                                             <constraint firstItem="tnc-ih-nIp" firstAttribute="height" secondItem="c3h-Vg-fLH" secondAttribute="height" id="cJV-RD-wVG"/>
-                                            <constraint firstItem="CQ2-Uu-wS9" firstAttribute="leading" secondItem="Osx-fv-y68" secondAttribute="trailing" constant="5" id="omo-qZ-0ez"/>
+                                            <constraint firstItem="CQ2-Uu-wS9" firstAttribute="leading" secondItem="Osx-fv-y68" secondAttribute="trailing" constant="10" id="omo-qZ-0ez"/>
                                             <constraint firstItem="Hk0-5b-iQR" firstAttribute="leading" secondItem="PH0-Of-ONF" secondAttribute="leading" id="rrZ-yF-gPn"/>
                                             <constraint firstAttribute="height" constant="110" id="sqD-cl-Rhu"/>
                                             <constraint firstItem="tnc-ih-nIp" firstAttribute="top" secondItem="c3h-Vg-fLH" secondAttribute="top" id="t6T-zT-frg"/>
@@ -426,7 +426,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="KrK-Ji-cuQ" kind="presentation" id="qa9-W3-PrC"/>
+                                            <action selector="login:" destination="Tuy-ik-ysn" eventType="touchUpInside" id="KE8-u5-vlE"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJn-Ed-Lua">
@@ -517,6 +517,8 @@
                     <connections>
                         <outlet property="inView" destination="PH0-Of-ONF" id="D5A-hp-VQX"/>
                         <outlet property="line" destination="Hk0-5b-iQR" id="0wd-OW-2Kd"/>
+                        <outlet property="nameField" destination="CQ2-Uu-wS9" id="7kt-hu-waU"/>
+                        <outlet property="pswField" destination="tnc-ih-nIp" id="uP3-VZ-AL3"/>
                         <outlet property="registBtn" destination="OJn-Ed-Lua" id="bWA-UY-yUh"/>
                     </connections>
                 </viewController>

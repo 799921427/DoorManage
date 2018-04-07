@@ -26,6 +26,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var line: UILabel!
     @IBOutlet weak var inView: UIView!
     @IBOutlet weak var registBtn: UIButton!
+    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var pswField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -35,6 +37,22 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    @IBAction func login(_ sender: Any) {
+        let dic : [String:String]
+        let nameStr = nameField.text as! String
+        let pswStr = pswField.text as! String
+        dic = ["name":nameStr,"password":pswStr]
+        ZDMInterfaceConnection().connentNet(method: "/login", params: dic, block: {(fail,dataMsg,dict) in
+                print("succes:\(fail)")
+                if(fail==0)
+                {
+                    let story = UIStoryboard(name: "Main", bundle: nil)
+                    let tabView = story.instantiateViewController(withIdentifier: "MyTabBarViewController")
+                    self.present(tabView, animated: true, completion: nil)
+                }
+            })
+        
     }
     
     
@@ -52,6 +70,7 @@ extension ViewController
         let btnColor = UIColor.init(red: 255.0/255, green: 140.0/255, blue: 43.0/255, alpha: 1)
         registBtn.layer.borderColor = btnColor.cgColor
         registBtn.layer.borderWidth = 1
+        
     }
 }
 
